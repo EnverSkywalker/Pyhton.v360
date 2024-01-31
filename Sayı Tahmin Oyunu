@@ -1,60 +1,20 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyPAgUQQpC2wDitJJXpdZdzo",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/EnverSkywalker/Pyhton.v360/blob/main/Say%C4%B1%20Tahmin%20Oyunu\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "import random\n",
-        "\n",
-        "def sayitahmin():\n",
-        "    sayı = random.randint(1, 100)\n",
-        "\n",
-        "    while True:\n",
-        "        tahmin = int(input(\"Tahmininiz: \"))\n",
-        "\n",
-        "        if tahmin < 1 or tahmin > 100:\n",
-        "            print(\"1 ile 100 arasında bir sayı girin.\")\n",
-        "        else:\n",
-        "            if tahmin < sayı:\n",
-        "                print(\"Daha büyük bir sayı girin.\")\n",
-        "            elif tahmin > sayı:\n",
-        "                print(\"Daha küçük bir sayı girin.\")\n",
-        "            else:\n",
-        "                print(\"Doğru sayıyı buldunuz.\")\n",
-        "                break\n",
-        "\n",
-        "sayitahmin()"
-      ],
-      "metadata": {
-        "id": "12r9vb-5h8Yw"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
-}
+import random
+
+def sayitahmin():
+    sayı = random.randint(1, 100)
+
+    while True:
+        tahmin = int(input("Tahmininiz: "))
+
+        if tahmin < 1 or tahmin > 100:
+            print("1 ile 100 arasında bir sayı girin.")
+        else:
+            if tahmin < sayı:
+                print("Daha büyük bir sayı girin.")
+            elif tahmin > sayı:
+                print("Daha küçük bir sayı girin.")
+            else:
+                print("Doğru sayıyı buldunuz.")
+                break
+
+sayitahmin()
